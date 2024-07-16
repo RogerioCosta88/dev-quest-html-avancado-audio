@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Quest: Audio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Audio</h1>
+    <p>Usamos a <strong>Tag</strong> <strong>audio</strong> para adicionar audios nos sites</p>
+
+    <h2>Controls</h2>
+    <p><strong>Controls</strong> é um atributo da <strong>Tag</strong> <strong>audio</strong>. O <strong>controls</strong> adiciona os <em>botões</em> para controle do audio, como: play, pause, avançar e retroceder o som.</p>
+
+    <h2>Tittle</h2>
+    <p>Já o atributo <strong>tittle</strong> adiciona um <em>título</em> ao arquivo de audio, da mesma forma que acontece na <strong>Tag</strong> <strong>img</strong>.</p>
+
+    <h2>Autoplay</h2>
+    <p>O <strong>autoplay</strong> é um atributo que dá play no audio assim que a página carrega, sem que o usuário precise clicar no botão de play. O <em>navegador</em> <strong>Chrome</strong> não permite que esse atributo funcione, sendo necessário usar uma <em>biblioteca</em> de <strong>JavaScript</strong> para que o atributo <strong>autoplay</strong> funcione no <strong>Chrome</strong>.</p>
+    
+    <h2>Preload</h2>
+    <p><strong>Preload</strong> é um <em>atributo</em> usado para carregar o audio e algumas informações assim que a página carregar. O <em>valor</em> padrão do <em>atributo</em> <strong>preload</strong> é o <em>auto</em> que carrega o audio e as informações automaticamente, sem que o usuário precise no clicar no botão de play. Mas podemos escolher entre outros dois <em>valores</em> que são melhores para que o usuário gaste menos dados: <em>metadata</em> que carrega somente algumas informações, como: o tempo do áudio, ou <em>none</em> que só irá carregar tanto o áudio, quanto as informações do áudio, quando o usuário clicar no botão de play.</p>
+
+    <h2>Extensões</h2>
+    <p>Alguns navegadores não aceitam certos tipos de extensões de áudio, exemplo: o navegador <strong>Safari</strong> não recenhece a extensão .ogg, para evitar esse tipo de problema, é interessante colocar mais de uma opção de extensão na página usando a <strong>Tag</strong> <strong>source</strong> dentro da <strong>Tag</strong> <strong>audio</strong>, usamos uma <strong>Tag</strong> <strong>source</strong> para cada extensão. Adicionando o caminho do áudio no <em>atributo</em> <strong>src</strong> para cada extensão e também um <em>atributo</em> <strong>type</strong>.</p>
+
+    <p>O site Convertio.com converte áudio <a href="https://convertio.co/pt/" target="_blank">Clique aqui</a> para acessar o site.</p>
+
+    <audio controls autoplay preload="none">
+        <source src="./audios/audio.mp3" type="audio/mpeg">
+        <source src="./audios/audio.ogg" type="audio/ogg">
+        <source src="./audios/audio.wav" type="audio/wav">
+
+        <p>Se o áudio não estiver funcionando pode ser que seu navegador não tenha suporte para arquivos de áudio <a href="https://www.google.pt/intl/pt-PT/chrome/?brand=CHBD&ds_kid=43700076570745616&gad_source=1&gclid=CjwKCAjwtNi0BhA1EiwAWZaANFGnezEfYQ3sVpzyx9DSaFZ-H-CR96KSEeAG87eDolvp59xE3WIUWhoCefsQAvD_BwE&gclsrc=aw.ds">Clique aqui</a> para fazer o download de um navegador que tenha suporte para áudios.</p>
+    </audio>
+</body>
+</html>
